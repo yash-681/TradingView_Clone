@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wdd.css"> <!-- Updated CSS file reference -->
+    <script src="wdd.js"></script> <!-- Updated JS file reference -->
+    <title>Real-time Stock Prices</title>
+</head>
+<body>
+    <header>
+        <h1>Real-time Stock Prices</h1>
+    </header>
+
+    <main id="stockList">
+        <!-- Stock prices will be displayed here -->
+    </main>
+
+    <button id="fetchPricesButton">Fetch Stock Prices</button>
+
+    <script>
+        document.getElementById('fetchPricesButton').addEventListener('click', () => {
+            stockSymbols.forEach(symbol => {
+                fetchStockPrice(symbol);
+            });
+        });
+    </script>
+</body>
+</html>
